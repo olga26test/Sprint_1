@@ -2,10 +2,9 @@ class Tester:
 
     def __init__(self, name):  #добавили обязательный параметр self
         self.name = name
-        self.deadline = True
 
     def work_hard(self, deadline=True):
-        if self.deadline and self.name != "tester_1":  #добавили условие для tester_1
+        if deadline:
             print(self.name, "Что ж, ещё часок поработаю!")
         else:
             print(self.name, "Можно отдыхать")
