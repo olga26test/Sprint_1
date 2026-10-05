@@ -13,7 +13,7 @@ for key, value in world_champions.items():
 
 country = 'Италия'
 
-if country in world_champions.keys() or country in world_champions.values(): #определяем, была ли Италия чемпионом в 21 веке
+if country in world_champions.values(): #определяем, была ли Италия чемпионом в 21 веке
     print('Италия cтановилась чемпионом мира по футболу в 21 веке!')
 else:
     print('Италия не выигрывала чемпионат мира по футболу в 21 веке.')
