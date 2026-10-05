@@ -7,7 +7,9 @@ class TestCase:
         self.steps[step_number] = step_text
 
     def delete_step(self, step_number): #метод для удаления шага
-        self.steps.pop(step_number)  
+        del self.steps[step_number]  #было замечание, что лучше поменять .pop()
+        # из изученных нами .remove() для словаря не подходит
+        # спросила у ИИ - предложил оператор del
 
     def set_result(self, result): #метод для установки результата
         self.result = result
